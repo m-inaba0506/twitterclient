@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A246511617477D91008A0202 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A246511517477D91008A0202 /* FavoritesTableViewController.m */; };
+		A256B1A01744E9A8006B0736 /* @.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19B1744E9A8006B0736 /* @.png */; };
+		A256B1A11744E9A8006B0736 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19C1744E9A8006B0736 /* blank.png */; };
+		A256B1A21744E9A8006B0736 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19D1744E9A8006B0736 /* haikei.png */; };
+		A256B1A31744E9A8006B0736 /* TL.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19E1744E9A8006B0736 /* TL.png */; };
+		A256B1A41744E9A8006B0736 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19F1744E9A8006B0736 /* top.png */; };
+		A2E843071743A26A00CD3C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843061743A26A00CD3C59 /* UIKit.framework */; };
+		A2E843091743A26A00CD3C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843081743A26A00CD3C59 /* Foundation.framework */; };
+		A2E8430B1743A26A00CD3C59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E8430A1743A26A00CD3C59 /* CoreGraphics.framework */; };
+		A2E843111743A26A00CD3C59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2E8430F1743A26A00CD3C59 /* InfoPlist.strings */; };
+		A2E843131743A26A00CD3C59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843121743A26A00CD3C59 /* main.m */; };
+		A2E843171743A26A00CD3C59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843161743A26A00CD3C59 /* AppDelegate.m */; };
+		A2E843191743A26A00CD3C59 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E843181743A26A00CD3C59 /* Default.png */; };
+		A2E8431B1743A26A00CD3C59 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8431A1743A26A00CD3C59 /* Default@2x.png */; };
+		A2E8431D1743A26A00CD3C59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8431C1743A26A00CD3C59 /* Default-568h@2x.png */; };
+		A2E843201743A26A00CD3C59 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E8431E1743A26A00CD3C59 /* MainStoryboard.storyboard */; };
+		A2E843251743A26A00CD3C59 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E843241743A26A00CD3C59 /* first.png */; };
+		A2E843271743A26A00CD3C59 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E843261743A26A00CD3C59 /* first@2x.png */; };
+		A2E8432A1743A26A00CD3C59 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843291743A26A00CD3C59 /* SecondViewController.m */; };
+		A2E8432C1743A26A00CD3C59 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8432B1743A26A00CD3C59 /* second.png */; };
+		A2E8432E1743A26A00CD3C59 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8432D1743A26A00CD3C59 /* second@2x.png */; };
+		A2E843361743A37000CD3C59 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */; };
+		A2E843391743B4F200CD3C59 /* TweetSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843381743B4F200CD3C59 /* TweetSheetViewController.m */; };
+		A2E8433C1743B53C00CD3C59 /* ReplyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E8433B1743B53C00CD3C59 /* ReplyTableViewController.m */; };
+		A2E8433F1743B89300CD3C59 /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E8433E1743B89300CD3C59 /* TimeLineCell.m */; };
+		A2E843421743BAC000CD3C59 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843411743BAC000CD3C59 /* DetailViewController.m */; };
+		A2E843441743BBD800CD3C59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843431743BBD800CD3C59 /* QuartzCore.framework */; };
+		A2E843461743BBE200CD3C59 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843451743BBE200CD3C59 /* Accounts.framework */; };
+		A2E843481743BBEE00CD3C59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843471743BBEE00CD3C59 /* Social.framework */; };
+		A2E8434B1743BCE000CD3C59 /* ReplyTweetSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A246511417477D91008A0202 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		A246511517477D91008A0202 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		A256B19B1744E9A8006B0736 /* @.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@.png"; sourceTree = "<group>"; };
+		A256B19C1744E9A8006B0736 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		A256B19D1744E9A8006B0736 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
+		A256B19E1744E9A8006B0736 /* TL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TL.png; sourceTree = "<group>"; };
+		A256B19F1744E9A8006B0736 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		A2E843031743A26A00CD3C59 /* TwitterCrient02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCrient02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E843061743A26A00CD3C59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2E843081743A26A00CD3C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2E8430A1743A26A00CD3C59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2E8430E1743A26A00CD3C59 /* TwitterCrient02-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterCrient02-Info.plist"; sourceTree = "<group>"; };
+		A2E843101743A26A00CD3C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2E843121743A26A00CD3C59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2E843141743A26A00CD3C59 /* TwitterCrient02-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterCrient02-Prefix.pch"; sourceTree = "<group>"; };
+		A2E843151743A26A00CD3C59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2E843161743A26A00CD3C59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2E843181743A26A00CD3C59 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A2E8431A1743A26A00CD3C59 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A2E8431C1743A26A00CD3C59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A2E8431F1743A26A00CD3C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A2E843241743A26A00CD3C59 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		A2E843261743A26A00CD3C59 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		A2E843281743A26A00CD3C59 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A2E843291743A26A00CD3C59 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A2E8432B1743A26A00CD3C59 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		A2E8432D1743A26A00CD3C59 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		A2E843341743A37000CD3C59 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
+		A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
+		A2E843371743B4F200CD3C59 /* TweetSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetSheetViewController.h; sourceTree = "<group>"; };
+		A2E843381743B4F200CD3C59 /* TweetSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetSheetViewController.m; sourceTree = "<group>"; };
+		A2E8433A1743B53C00CD3C59 /* ReplyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyTableViewController.h; sourceTree = "<group>"; };
+		A2E8433B1743B53C00CD3C59 /* ReplyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyTableViewController.m; sourceTree = "<group>"; };
+		A2E8433D1743B89300CD3C59 /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
+		A2E8433E1743B89300CD3C59 /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
+		A2E843401743BAC000CD3C59 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A2E843411743BAC000CD3C59 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A2E843431743BBD800CD3C59 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A2E843451743BBE200CD3C59 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A2E843471743BBEE00CD3C59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A2E843491743BCDF00CD3C59 /* ReplyTweetSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyTweetSheetViewController.h; sourceTree = "<group>"; };
+		A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyTweetSheetViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2E843001743A26A00CD3C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E843481743BBEE00CD3C59 /* Social.framework in Frameworks */,
+				A2E843461743BBE200CD3C59 /* Accounts.framework in Frameworks */,
+				A2E843441743BBD800CD3C59 /* QuartzCore.framework in Frameworks */,
+				A2E843071743A26A00CD3C59 /* UIKit.framework in Frameworks */,
+				A2E843091743A26A00CD3C59 /* Foundation.framework in Frameworks */,
+				A2E8430B1743A26A00CD3C59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A256B19A1744E9A8006B0736 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A256B19B1744E9A8006B0736 /* @.png */,
+				A256B19C1744E9A8006B0736 /* blank.png */,
+				A256B19D1744E9A8006B0736 /* haikei.png */,
+				A256B19E1744E9A8006B0736 /* TL.png */,
+				A256B19F1744E9A8006B0736 /* top.png */,
+			);
+			name = images;
+			path = TwitterCrient02/images;
+			sourceTree = "<group>";
+		};
+		A2E842FA1743A26A00CD3C59 = {
+			isa = PBXGroup;
+			children = (
+				A256B19A1744E9A8006B0736 /* images */,
+				A2E843471743BBEE00CD3C59 /* Social.framework */,
+				A2E843451743BBE200CD3C59 /* Accounts.framework */,
+				A2E843431743BBD800CD3C59 /* QuartzCore.framework */,
+				A2E8430C1743A26A00CD3C59 /* TwitterCrient02 */,
+				A2E843051743A26A00CD3C59 /* Frameworks */,
+				A2E843041743A26A00CD3C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2E843041743A26A00CD3C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2E843031743A26A00CD3C59 /* TwitterCrient02.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E843051743A26A00CD3C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2E843061743A26A00CD3C59 /* UIKit.framework */,
+				A2E843081743A26A00CD3C59 /* Foundation.framework */,
+				A2E8430A1743A26A00CD3C59 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2E8430C1743A26A00CD3C59 /* TwitterCrient02 */ = {
+			isa = PBXGroup;
+			children = (
+				A2E843151743A26A00CD3C59 /* AppDelegate.h */,
+				A2E843161743A26A00CD3C59 /* AppDelegate.m */,
+				A2E8431E1743A26A00CD3C59 /* MainStoryboard.storyboard */,
+				A2E843341743A37000CD3C59 /* TimeLineTableViewController.h */,
+				A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */,
+				A2E843241743A26A00CD3C59 /* first.png */,
+				A2E843261743A26A00CD3C59 /* first@2x.png */,
+				A2E843281743A26A00CD3C59 /* SecondViewController.h */,
+				A2E843291743A26A00CD3C59 /* SecondViewController.m */,
+				A2E8432B1743A26A00CD3C59 /* second.png */,
+				A2E8432D1743A26A00CD3C59 /* second@2x.png */,
+				A2E8430D1743A26A00CD3C59 /* Supporting Files */,
+				A2E843371743B4F200CD3C59 /* TweetSheetViewController.h */,
+				A2E843381743B4F200CD3C59 /* TweetSheetViewController.m */,
+				A2E8433A1743B53C00CD3C59 /* ReplyTableViewController.h */,
+				A2E8433B1743B53C00CD3C59 /* ReplyTableViewController.m */,
+				A2E8433D1743B89300CD3C59 /* TimeLineCell.h */,
+				A2E8433E1743B89300CD3C59 /* TimeLineCell.m */,
+				A2E843401743BAC000CD3C59 /* DetailViewController.h */,
+				A2E843411743BAC000CD3C59 /* DetailViewController.m */,
+				A2E843491743BCDF00CD3C59 /* ReplyTweetSheetViewController.h */,
+				A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */,
+				A246511417477D91008A0202 /* FavoritesTableViewController.h */,
+				A246511517477D91008A0202 /* FavoritesTableViewController.m */,
+			);
+			path = TwitterCrient02;
+			sourceTree = "<group>";
+		};
+		A2E8430D1743A26A00CD3C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2E8430E1743A26A00CD3C59 /* TwitterCrient02-Info.plist */,
+				A2E8430F1743A26A00CD3C59 /* InfoPlist.strings */,
+				A2E843121743A26A00CD3C59 /* main.m */,
+				A2E843141743A26A00CD3C59 /* TwitterCrient02-Prefix.pch */,
+				A2E843181743A26A00CD3C59 /* Default.png */,
+				A2E8431A1743A26A00CD3C59 /* Default@2x.png */,
+				A2E8431C1743A26A00CD3C59 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2E843021743A26A00CD3C59 /* TwitterCrient02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E843311743A26A00CD3C59 /* Build configuration list for PBXNativeTarget "TwitterCrient02" */;
+			buildPhases = (
+				A2E842FF1743A26A00CD3C59 /* Sources */,
+				A2E843001743A26A00CD3C59 /* Frameworks */,
+				A2E843011743A26A00CD3C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterCrient02;
+			productName = TwitterCrient02;
+			productReference = A2E843031743A26A00CD3C59 /* TwitterCrient02.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2E842FB1743A26A00CD3C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "inaba masaya";
+			};
+			buildConfigurationList = A2E842FE1743A26A00CD3C59 /* Build configuration list for PBXProject "TwitterCrient02" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2E842FA1743A26A00CD3C59;
+			productRefGroup = A2E843041743A26A00CD3C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2E843021743A26A00CD3C59 /* TwitterCrient02 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2E843011743A26A00CD3C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E843111743A26A00CD3C59 /* InfoPlist.strings in Resources */,
+				A2E843191743A26A00CD3C59 /* Default.png in Resources */,
+				A2E8431B1743A26A00CD3C59 /* Default@2x.png in Resources */,
+				A2E8431D1743A26A00CD3C59 /* Default-568h@2x.png in Resources */,
+				A2E843201743A26A00CD3C59 /* MainStoryboard.storyboard in Resources */,
+				A2E843251743A26A00CD3C59 /* first.png in Resources */,
+				A2E843271743A26A00CD3C59 /* first@2x.png in Resources */,
+				A2E8432C1743A26A00CD3C59 /* second.png in Resources */,
+				A2E8432E1743A26A00CD3C59 /* second@2x.png in Resources */,
+				A256B1A01744E9A8006B0736 /* @.png in Resources */,
+				A256B1A11744E9A8006B0736 /* blank.png in Resources */,
+				A256B1A21744E9A8006B0736 /* haikei.png in Resources */,
+				A256B1A31744E9A8006B0736 /* TL.png in Resources */,
+				A256B1A41744E9A8006B0736 /* top.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2E842FF1743A26A00CD3C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E843131743A26A00CD3C59 /* main.m in Sources */,
+				A2E843171743A26A00CD3C59 /* AppDelegate.m in Sources */,
+				A2E8432A1743A26A00CD3C59 /* SecondViewController.m in Sources */,
+				A2E843361743A37000CD3C59 /* TimeLineTableViewController.m in Sources */,
+				A2E843391743B4F200CD3C59 /* TweetSheetViewController.m in Sources */,
+				A2E8433C1743B53C00CD3C59 /* ReplyTableViewController.m in Sources */,
+				A2E8433F1743B89300CD3C59 /* TimeLineCell.m in Sources */,
+				A2E843421743BAC000CD3C59 /* DetailViewController.m in Sources */,
+				A2E8434B1743BCE000CD3C59 /* ReplyTweetSheetViewController.m in Sources */,
+				A246511617477D91008A0202 /* FavoritesTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2E8430F1743A26A00CD3C59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E843101743A26A00CD3C59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2E8431E1743A26A00CD3C59 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E8431F1743A26A00CD3C59 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2E8432F1743A26A00CD3C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2E843301743A26A00CD3C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2E843321743A26A00CD3C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterCrient02/TwitterCrient02-Prefix.pch";
+				INFOPLIST_FILE = "TwitterCrient02/TwitterCrient02-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2E843331743A26A00CD3C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterCrient02/TwitterCrient02-Prefix.pch";
+				INFOPLIST_FILE = "TwitterCrient02/TwitterCrient02-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2E842FE1743A26A00CD3C59 /* Build configuration list for PBXProject "TwitterCrient02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E8432F1743A26A00CD3C59 /* Debug */,
+				A2E843301743A26A00CD3C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E843311743A26A00CD3C59 /* Build configuration list for PBXNativeTarget "TwitterCrient02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E843321743A26A00CD3C59 /* Debug */,
+				A2E843331743A26A00CD3C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2E842FB1743A26A00CD3C59 /* Project object */;
+}
