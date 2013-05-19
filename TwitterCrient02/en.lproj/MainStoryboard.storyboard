@@ -12,19 +12,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Wdj-hg-XjW" detailTextLabel="bli-uG-xUd" style="IBUITableViewCellStyleSubtitle" id="tSF-wG-xgo">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="xph-Po-9Xe" detailTextLabel="2oz-u3-fTa" style="IBUITableViewCellStyleSubtitle" id="tSF-wG-xgo">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-hg-XjW">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xph-Po-9Xe">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bli-uG-xUd">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2oz-u3-fTa">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -248,11 +252,6 @@
                                     <action selector="favorite:" destination="z1j-S5-bUz" eventType="touchUpInside" id="fOj-VF-G7b"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzG-lU-8RE">
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -261,10 +260,8 @@
                             <constraint firstItem="iib-ah-Vwp" firstAttribute="leading" secondItem="iNn-rk-AKK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Chc-mA-yV4"/>
                             <constraint firstItem="QZ5-lG-l1Q" firstAttribute="baseline" secondItem="s5k-dc-iQa" secondAttribute="baseline" type="default" id="Mqs-O2-2B0"/>
                             <constraint firstItem="R6k-GO-CCr" firstAttribute="top" secondItem="iNn-rk-AKK" secondAttribute="top" type="default" id="PPw-Gh-TF6"/>
-                            <constraint firstItem="CzG-lU-8RE" firstAttribute="top" secondItem="Ehd-KG-gZy" secondAttribute="top" type="default" id="Uby-hm-pPt"/>
                             <constraint firstItem="s5k-dc-iQa" firstAttribute="leading" secondItem="QZ5-lG-l1Q" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UgN-Ih-5VP"/>
                             <constraint firstItem="QZ5-lG-l1Q" firstAttribute="leading" secondItem="iNn-rk-AKK" secondAttribute="leading" constant="57" id="als-FA-V7N"/>
-                            <constraint firstAttribute="trailing" secondItem="CzG-lU-8RE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dpg-WP-PU2"/>
                             <constraint firstItem="iib-ah-Vwp" firstAttribute="top" secondItem="iNn-rk-AKK" secondAttribute="top" constant="20" symbolic="YES" type="default" id="eGm-MC-McF"/>
                             <constraint firstAttribute="bottom" secondItem="QZ5-lG-l1Q" secondAttribute="bottom" constant="14" id="gRV-uZ-Pos"/>
                             <constraint firstItem="Ehd-KG-gZy" firstAttribute="centerX" secondItem="7Fx-hM-K7u" secondAttribute="centerX" type="default" id="kIe-vn-mY9"/>
@@ -440,12 +437,58 @@
         <image name="haikei.png" width="320" height="480"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Favorite:"/>
+                <relationship kind="action" name="favorite:"/>
+                <relationship kind="action" name="replyAction:"/>
+                <relationship kind="action" name="retweetAction:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="FavoritesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FavoritesTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setAccountAction:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ReplyTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReplyTableViewController.h"/>
+        </class>
+        <class className="ReplyTweetSheetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReplyTweetSheetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tweetAction:"/>
+                <relationship kind="outlet" name="tweetTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TimeLineTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeLineTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setAccountAction:"/>
+            </relationships>
+        </class>
+        <class className="TweetSheetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetSheetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tweetAction:"/>
+                <relationship kind="outlet" name="tweetTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5PP-x5-m8W"/>
+        <segue reference="vNG-FA-ski"/>
     </inferredMetricsTieBreakers>
 </document>

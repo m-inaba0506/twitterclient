@@ -27,9 +27,6 @@
         self.nameLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:self.nameLabel];
         
-        //self.favimage = [[UIButton alloc]initWithFrame:CGRectZero];
-        
-        
     }
     return self;
 }
