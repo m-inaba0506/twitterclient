@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 
+//@property (nonatomic, strong) UIImageView *favimage;
+
 @property (nonatomic, strong) UIImage *image;
 
 @property (nonatomic) int tweetTextLabelHeight;
