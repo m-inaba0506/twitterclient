@@ -109,12 +109,16 @@
     
 }
 - (IBAction)favorite:(id)sender {
+   
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccount *account = [accountStore accountWithIdentifier:self.identifier];
     
     NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/favorites/create.json"];
     
-    NSDictionary *params = @{@"id_str":self.idStr};
+   // NSDictionary *params = @{@"id_str":self.idStr};
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params setObject:_idStr forKey:@"id"];
+    [params setObject:@"true" forKey:@"include_entities"];
     
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                             requestMethod:SLRequestMethodPOST
@@ -147,7 +151,50 @@
         }
     }];
     
-
+    /*
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+    ACAccount *account = [accountStore accountWithIdentifier:self.identifier];
+    
+                // Creating a request to get the info about a user on Twitter
+                
+                NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+                [parameters setObject:_idStr forKey:@"id"];
+                [parameters setObject:@"true" forKey:@"include_entities"];
+                
+                NSString *url = [[NSString alloc] initWithFormat:@"https://api.twitter.com/1.1/favorites/create.json"];
+                
+                SLRequest *twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodPOST URL:[NSURL URLWithString:url] parameters:parameters];
+                
+                [twitterInfoRequest setAccount:account];
+                
+                // Making the request
+                
+                [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                    
+                    // NSString *msg = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+                    // NSLog(@"%@", msg);
+                    
+                    if(error) { NSLog(@"Error getting data: %@", [error description]); return; }
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if ([urlResponse statusCode] != 200) {
+                            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Sorry, your request doesn't succeed."
+                                                                              message:@"Please try again."
+                                                                             delegate:nil
+                                                                    cancelButtonTitle:@"OK"
+                                                                    otherButtonTitles:nil];
+                            [message show];
+                        } else {
+                            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Congratulations!"
+                                                                              message:@"Favorite Successfully!"
+                                                                             delegate:nil
+                                                                    cancelButtonTitle:@"OK"
+                                                                    otherButtonTitles:nil];
+                            [message show];
+                        }
+                    });
+                }];
+     */
 }
 - (IBAction)replyAction:(id)sender {
     // timeLineTableVewController.name = cell.nameLabel.text;
