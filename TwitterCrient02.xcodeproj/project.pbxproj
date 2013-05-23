@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20ACC4D174B130C009956D2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20ACC4C174B130C009956D2 /* WebViewController.m */; };
+		A20ACC50174B1667009956D2 /* MyUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A20ACC4F174B1667009956D2 /* MyUIApplication.m */; };
 		A246511617477D91008A0202 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A246511517477D91008A0202 /* FavoritesTableViewController.m */; };
 		A256B1A01744E9A8006B0736 /* @.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19B1744E9A8006B0736 /* @.png */; };
 		A256B1A11744E9A8006B0736 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19C1744E9A8006B0736 /* blank.png */; };
 		A256B1A21744E9A8006B0736 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19D1744E9A8006B0736 /* haikei.png */; };
 		A256B1A31744E9A8006B0736 /* TL.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19E1744E9A8006B0736 /* TL.png */; };
 		A256B1A41744E9A8006B0736 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = A256B19F1744E9A8006B0736 /* top.png */; };
+		A25F7192174CBF4000689877 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A25F7191174CBF4000689877 /* camera.png */; };
+		A25F7194174CC0EC00689877 /* camera02.png in Resources */ = {isa = PBXBuildFile; fileRef = A25F7193174CC0EC00689877 /* camera02.png */; };
+		A295DC84174B57410015E5DE /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A295DC83174B57410015E5DE /* right-arrow.png */; };
 		A2E843071743A26A00CD3C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843061743A26A00CD3C59 /* UIKit.framework */; };
 		A2E843091743A26A00CD3C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843081743A26A00CD3C59 /* Foundation.framework */; };
 		A2E8430B1743A26A00CD3C59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E8430A1743A26A00CD3C59 /* CoreGraphics.framework */; };
@@ -25,7 +30,6 @@
 		A2E843201743A26A00CD3C59 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E8431E1743A26A00CD3C59 /* MainStoryboard.storyboard */; };
 		A2E843251743A26A00CD3C59 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E843241743A26A00CD3C59 /* first.png */; };
 		A2E843271743A26A00CD3C59 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E843261743A26A00CD3C59 /* first@2x.png */; };
-		A2E8432A1743A26A00CD3C59 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843291743A26A00CD3C59 /* SecondViewController.m */; };
 		A2E8432C1743A26A00CD3C59 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8432B1743A26A00CD3C59 /* second.png */; };
 		A2E8432E1743A26A00CD3C59 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E8432D1743A26A00CD3C59 /* second@2x.png */; };
 		A2E843361743A37000CD3C59 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */; };
@@ -37,9 +41,19 @@
 		A2E843461743BBE200CD3C59 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843451743BBE200CD3C59 /* Accounts.framework */; };
 		A2E843481743BBEE00CD3C59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E843471743BBEE00CD3C59 /* Social.framework */; };
 		A2E8434B1743BCE000CD3C59 /* ReplyTweetSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */; };
+		A2F21AF91748E7A500C436D1 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21AF81748E7A500C436D1 /* star.png */; };
+		A2F21B051748EAA400C436D1 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21B021748EAA400C436D1 /* left-arrow.png */; };
+		A2F21B061748EAA400C436D1 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21B031748EAA400C436D1 /* refresh.png */; };
+		A2F21B071748EAA400C436D1 /* star.gry.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21B041748EAA400C436D1 /* star.gry.png */; };
+		A2F21B0A1748EB5700C436D1 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21B081748EB5700C436D1 /* pen.png */; };
+		A2F21B0B1748EB5700C436D1 /* settings2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F21B091748EB5700C436D1 /* settings2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A20ACC4B174B130C009956D2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A20ACC4C174B130C009956D2 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		A20ACC4E174B1667009956D2 /* MyUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIApplication.h; sourceTree = "<group>"; };
+		A20ACC4F174B1667009956D2 /* MyUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIApplication.m; sourceTree = "<group>"; };
 		A246511417477D91008A0202 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		A246511517477D91008A0202 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		A256B19B1744E9A8006B0736 /* @.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@.png"; sourceTree = "<group>"; };
@@ -47,6 +61,9 @@
 		A256B19D1744E9A8006B0736 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
 		A256B19E1744E9A8006B0736 /* TL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TL.png; sourceTree = "<group>"; };
 		A256B19F1744E9A8006B0736 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		A25F7191174CBF4000689877 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		A25F7193174CC0EC00689877 /* camera02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera02.png; sourceTree = "<group>"; };
+		A295DC83174B57410015E5DE /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		A2E843031743A26A00CD3C59 /* TwitterCrient02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCrient02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E843061743A26A00CD3C59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2E843081743A26A00CD3C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,12 +78,10 @@
 		A2E8431A1743A26A00CD3C59 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A2E8431C1743A26A00CD3C59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A2E8431F1743A26A00CD3C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A2E843241743A26A00CD3C59 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		A2E843261743A26A00CD3C59 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		A2E843281743A26A00CD3C59 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A2E843291743A26A00CD3C59 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		A2E8432B1743A26A00CD3C59 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		A2E8432D1743A26A00CD3C59 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		A2E843241743A26A00CD3C59 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../first.png; sourceTree = "<group>"; };
+		A2E843261743A26A00CD3C59 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../first@2x.png"; sourceTree = "<group>"; };
+		A2E8432B1743A26A00CD3C59 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../second.png; sourceTree = "<group>"; };
+		A2E8432D1743A26A00CD3C59 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../second@2x.png"; sourceTree = "<group>"; };
 		A2E843341743A37000CD3C59 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
 		A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
 		A2E843371743B4F200CD3C59 /* TweetSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetSheetViewController.h; sourceTree = "<group>"; };
@@ -82,6 +97,12 @@
 		A2E843471743BBEE00CD3C59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A2E843491743BCDF00CD3C59 /* ReplyTweetSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyTweetSheetViewController.h; sourceTree = "<group>"; };
 		A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyTweetSheetViewController.m; sourceTree = "<group>"; };
+		A2F21AF81748E7A500C436D1 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		A2F21B021748EAA400C436D1 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
+		A2F21B031748EAA400C436D1 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		A2F21B041748EAA400C436D1 /* star.gry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.gry.png; sourceTree = "<group>"; };
+		A2F21B081748EB5700C436D1 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		A2F21B091748EB5700C436D1 /* settings2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +125,19 @@
 		A256B19A1744E9A8006B0736 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A25F7193174CC0EC00689877 /* camera02.png */,
+				A25F7191174CBF4000689877 /* camera.png */,
+				A295DC83174B57410015E5DE /* right-arrow.png */,
+				A2E843241743A26A00CD3C59 /* first.png */,
+				A2E843261743A26A00CD3C59 /* first@2x.png */,
+				A2E8432B1743A26A00CD3C59 /* second.png */,
+				A2E8432D1743A26A00CD3C59 /* second@2x.png */,
+				A2F21B081748EB5700C436D1 /* pen.png */,
+				A2F21B091748EB5700C436D1 /* settings2.png */,
+				A2F21B021748EAA400C436D1 /* left-arrow.png */,
+				A2F21B031748EAA400C436D1 /* refresh.png */,
+				A2F21B041748EAA400C436D1 /* star.gry.png */,
+				A2F21AF81748E7A500C436D1 /* star.png */,
 				A256B19B1744E9A8006B0736 /* @.png */,
 				A256B19C1744E9A8006B0736 /* blank.png */,
 				A256B19D1744E9A8006B0736 /* haikei.png */,
@@ -118,9 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				A256B19A1744E9A8006B0736 /* images */,
-				A2E843471743BBEE00CD3C59 /* Social.framework */,
-				A2E843451743BBE200CD3C59 /* Accounts.framework */,
-				A2E843431743BBD800CD3C59 /* QuartzCore.framework */,
 				A2E8430C1743A26A00CD3C59 /* TwitterCrient02 */,
 				A2E843051743A26A00CD3C59 /* Frameworks */,
 				A2E843041743A26A00CD3C59 /* Products */,
@@ -138,6 +169,9 @@
 		A2E843051743A26A00CD3C59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2E843471743BBEE00CD3C59 /* Social.framework */,
+				A2E843451743BBE200CD3C59 /* Accounts.framework */,
+				A2E843431743BBD800CD3C59 /* QuartzCore.framework */,
 				A2E843061743A26A00CD3C59 /* UIKit.framework */,
 				A2E843081743A26A00CD3C59 /* Foundation.framework */,
 				A2E8430A1743A26A00CD3C59 /* CoreGraphics.framework */,
@@ -153,13 +187,6 @@
 				A2E8431E1743A26A00CD3C59 /* MainStoryboard.storyboard */,
 				A2E843341743A37000CD3C59 /* TimeLineTableViewController.h */,
 				A2E843351743A37000CD3C59 /* TimeLineTableViewController.m */,
-				A2E843241743A26A00CD3C59 /* first.png */,
-				A2E843261743A26A00CD3C59 /* first@2x.png */,
-				A2E843281743A26A00CD3C59 /* SecondViewController.h */,
-				A2E843291743A26A00CD3C59 /* SecondViewController.m */,
-				A2E8432B1743A26A00CD3C59 /* second.png */,
-				A2E8432D1743A26A00CD3C59 /* second@2x.png */,
-				A2E8430D1743A26A00CD3C59 /* Supporting Files */,
 				A2E843371743B4F200CD3C59 /* TweetSheetViewController.h */,
 				A2E843381743B4F200CD3C59 /* TweetSheetViewController.m */,
 				A2E8433A1743B53C00CD3C59 /* ReplyTableViewController.h */,
@@ -172,6 +199,11 @@
 				A2E8434A1743BCDF00CD3C59 /* ReplyTweetSheetViewController.m */,
 				A246511417477D91008A0202 /* FavoritesTableViewController.h */,
 				A246511517477D91008A0202 /* FavoritesTableViewController.m */,
+				A20ACC4B174B130C009956D2 /* WebViewController.h */,
+				A20ACC4C174B130C009956D2 /* WebViewController.m */,
+				A20ACC4E174B1667009956D2 /* MyUIApplication.h */,
+				A20ACC4F174B1667009956D2 /* MyUIApplication.m */,
+				A2E8430D1743A26A00CD3C59 /* Supporting Files */,
 			);
 			path = TwitterCrient02;
 			sourceTree = "<group>";
@@ -255,6 +287,15 @@
 				A256B1A21744E9A8006B0736 /* haikei.png in Resources */,
 				A256B1A31744E9A8006B0736 /* TL.png in Resources */,
 				A256B1A41744E9A8006B0736 /* top.png in Resources */,
+				A2F21AF91748E7A500C436D1 /* star.png in Resources */,
+				A2F21B051748EAA400C436D1 /* left-arrow.png in Resources */,
+				A2F21B061748EAA400C436D1 /* refresh.png in Resources */,
+				A2F21B071748EAA400C436D1 /* star.gry.png in Resources */,
+				A2F21B0A1748EB5700C436D1 /* pen.png in Resources */,
+				A2F21B0B1748EB5700C436D1 /* settings2.png in Resources */,
+				A295DC84174B57410015E5DE /* right-arrow.png in Resources */,
+				A25F7192174CBF4000689877 /* camera.png in Resources */,
+				A25F7194174CC0EC00689877 /* camera02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +308,6 @@
 			files = (
 				A2E843131743A26A00CD3C59 /* main.m in Sources */,
 				A2E843171743A26A00CD3C59 /* AppDelegate.m in Sources */,
-				A2E8432A1743A26A00CD3C59 /* SecondViewController.m in Sources */,
 				A2E843361743A37000CD3C59 /* TimeLineTableViewController.m in Sources */,
 				A2E843391743B4F200CD3C59 /* TweetSheetViewController.m in Sources */,
 				A2E8433C1743B53C00CD3C59 /* ReplyTableViewController.m in Sources */,
@@ -275,6 +315,8 @@
 				A2E843421743BAC000CD3C59 /* DetailViewController.m in Sources */,
 				A2E8434B1743BCE000CD3C59 /* ReplyTweetSheetViewController.m in Sources */,
 				A246511617477D91008A0202 /* FavoritesTableViewController.m in Sources */,
+				A20ACC4D174B130C009956D2 /* WebViewController.m in Sources */,
+				A20ACC50174B1667009956D2 /* MyUIApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

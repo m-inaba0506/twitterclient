@@ -163,7 +163,7 @@
          
          cell.tweetTextLabel.text = @"Loading...";
          
-         cell.tweetTextLabelHeight = 24;
+         cell.tweetTextLabelHeight = 200;
          
      } else {
          
@@ -314,14 +314,6 @@
     
     detailViewController.text = cell.tweetTextLabel.text;
     
-    
-    
-    // replyTweetSheetViewController.name = cell.nameLabel.text;
-    
-    
-    
-    
-    
     detailViewController.image = cell.imageView.image;
     
     detailViewController.identifier = self.identifier;
@@ -339,7 +331,6 @@
     // Pass the selected object to the new view controller.
     
     [self.navigationController pushViewController:detailViewController animated:YES];
-    // [self.navigationController pushViewController:tweetSheetViewController animated:YES];
 }
 
 

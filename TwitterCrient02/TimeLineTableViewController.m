@@ -28,7 +28,6 @@
     
     [super viewDidLoad];
     
-    
     self.accountStore = [[ACAccountStore alloc] init];
     
     ACAccountType *twitterType =
@@ -53,8 +52,6 @@
                                                         
                                                         dispatch_async(dispatch_get_main_queue(), ^{
                                                             
-                                                          //  self.accountDisplayLabel.text = account.username;
-                                                            
                                                         });
                                                         
                                                     }
@@ -62,9 +59,6 @@
                                                     else {
                                                         
                                                         dispatch_async(dispatch_get_main_queue(), ^{
-                                                            
-                                                         //   self.accountDisplayLabel.text = @"アカウントなし";
-                                                            
                                                         });
                                                         
                                                     }
@@ -77,23 +71,11 @@
                                                     
                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                         
-                                                    //    self.accountDisplayLabel.text = @"アカウント認証エラー";
-                                                        
                                                     });
                                                     
                                                 }
                                                 
                                             }];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     self.mainQueue = dispatch_get_main_queue();
     
@@ -150,8 +132,6 @@
     
     TimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimeLineCell" forIndexPath:indexPath];
     
-    
-    
     // Configure the cell...
     
     /*if (self.timelineData) {
@@ -161,14 +141,15 @@
      cell.tweetTextLabelHeight = 24;
      
      } else*/ if (!self.timelineData) {
-         
          cell.tweetTextLabel.text = @"Loading...";
-         
-         cell.tweetTextLabelHeight = 24;
+         cell.tweetTextLabelHeight = 200;
          
      } else {
          
          NSString *name = [[[self.timelineData objectAtIndex:indexPath.row] objectForKey:@"user"] objectForKey:@"screen_name"];
+         
+        // NSString *name2 = [[[self.timelineData objectAtIndex:indexPath.row] objectForKey:@"user"] objectForKey:@"name"];
+
          
          NSString *text = [[self.timelineData objectAtIndex:indexPath.row] objectForKey:@"text"];
          
@@ -185,6 +166,8 @@
          cell.tweetTextLabel.text = text;
          
          cell.nameLabel.text = name;
+         
+      //  cell.nameLabel2.text = name2;
          
          
          
@@ -237,7 +220,6 @@
              
          });
      }
-    //  cell.imageView.contentMode = UIViewContentModeScaleAspectFit;//画像サイズに合わせてimageViewを貼り付ける
     cell.imageView.layer.masksToBounds = YES;                    //imageViewの角丸
     cell.imageView.layer.cornerRadius = 7.0;                     //imageViewの角丸
     
@@ -306,7 +288,7 @@
     
     TimeLineCell *cell = (TimeLineCell *)[tableView cellForRowAtIndexPath:indexPath];
     
-       ReplyTweetSheetViewController *replyTweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReplyTweetSheetViewController"];
+    ReplyTweetSheetViewController *replyTweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReplyTweetSheetViewController"];
     
     
     DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
@@ -314,14 +296,6 @@
     detailViewController.name = cell.nameLabel.text;
     
     detailViewController.text = cell.tweetTextLabel.text;
-    
-    
-    
-    // replyTweetSheetViewController.name = cell.nameLabel.text;
-   
-    
-    
-    
     
     detailViewController.image = cell.imageView.image;
     
@@ -331,7 +305,7 @@
     
     replyTweetSheetViewController.in_reply_to_status_id = [[self.timelineData objectAtIndex:indexPath.row] objectForKey:@"in_reply_to_status_id"];
     
-
+    
     
     // ...
     
@@ -340,7 +314,6 @@
     // Pass the selected object to the new view controller.
     
     [self.navigationController pushViewController:detailViewController animated:YES];
-    // [self.navigationController pushViewController:tweetSheetViewController animated:YES];
 }
 
 
@@ -356,7 +329,7 @@
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     
-    [super viewDidLoad];
+   // [super viewDidLoad];
     
     //  Step 1:  Obtain access to the user's Twitter accounts
     
@@ -376,8 +349,10 @@
                                                     
                                                     NSArray *twitterAccounts = [self.accountStore accountsWithAccountType:twitterType];
                                                     
+                                                  
+                                                   NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"@"/1.1/statuses/home_timeline.json"];
+                                                   
                                                     
-                                                    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"@"/1.1/statuses/home_timeline.json"];
                                                     
                                                     NSDictionary *params = @{@"count" : @"20",
                                                                              
@@ -474,9 +449,9 @@
                                                     
                                                     NSArray *twitterAccounts = [self.accountStore accountsWithAccountType:twitterType];
                                                     
-                                                    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
-                                                                  
-                                                                  @"/1.1/statuses/home_timeline.json"];
+                                                   NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"@"/1.1/statuses/home_timeline.json"];
+
+
                                                     
                                                     NSDictionary *params = @{@"count" : @"20",
                                                                              
@@ -575,7 +550,7 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet  clickedButtonAtIndex:(NSInteger)buttonIndex { // アクションシート選択時の処理
-    
+
     if (self.twitterAccounts.count > 0) {
         
         if (buttonIndex != self.twitterAccounts.count) {
@@ -583,7 +558,6 @@
             ACAccount *account = [self.twitterAccounts objectAtIndex:buttonIndex];
             
             self.identifier = account.identifier;
-            
             
             NSLog(@"Account set! %@", account.username);
             
@@ -594,10 +568,7 @@
             NSLog(@"cancel!");
             
         }
-        
     }
-    
 }
-
 
 @end

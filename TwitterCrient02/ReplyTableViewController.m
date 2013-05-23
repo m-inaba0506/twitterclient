@@ -99,7 +99,7 @@
          
          cell.tweetTextLabel.text = @"Loading...";
          
-         cell.tweetTextLabelHeight = 24;
+         cell.tweetTextLabelHeight = 200;
          
      } else {
          
@@ -223,22 +223,11 @@
     
     TimeLineCell *cell = (TimeLineCell *)[tableView cellForRowAtIndexPath:indexPath];
     
-    //   ReplyTweetSheetViewController *replyTweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReplyTweetSheetViewController"];
-    
-    
     DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
     
     detailViewController.name = cell.nameLabel.text;
     
     detailViewController.text = cell.tweetTextLabel.text;
-    
-    
-    
-    // replyTweetSheetViewController.name = cell.nameLabel.text;
-    
-    
-    
-    
     
     detailViewController.image = cell.imageView.image;
     
@@ -247,11 +236,10 @@
     detailViewController.idStr = [[self.timelineData objectAtIndex:indexPath.row] objectForKey:@"id_str"];
     
     // ...
+    detailViewController.hidesBottomBarWhenPushed = YES;
     
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
-    // [self.navigationController pushViewController:tweetSheetViewController animated:YES];
-    
 }
 
 

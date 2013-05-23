@@ -7,10 +7,11 @@
 //
 
 #import "DetailViewController.h"
-#import <QuartzCore/QuartzCore.h>
-#import <Social/Social.h>
-#import <Accounts/Accounts.h>
+//#import <QuartzCore/QuartzCore.h>
+//#import <Social/Social.h>
+//#import <Accounts/Accounts.h>
 #import "ReplyTweetSheetViewController.h"
+#import "WebViewController.h"
 
 @interface DetailViewController ()
 
@@ -31,8 +32,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.imageView.image = self.image;
     
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    appDelegate.navigationController = self.navigationController;
+    
+    
+    self.imageView.image = self.image;
     self.imageView.layer.masksToBounds = YES;                    //imageViewの角丸 //#import <QuartzCore/QuartzCore.h>
     self.imageView.layer.cornerRadius = 7.0;                    //imageViewの角丸 //#import <QuartzCore/QuartzCore.h>
     
@@ -61,6 +67,7 @@
     _nameView.layer.shadowOpacity = 0.7f;
     _nameView.layer.shadowColor = [UIColor blackColor].CGColor;
     _nameView.layer.shadowRadius = 10.0f;
+    
     
 }
 
@@ -107,6 +114,9 @@
         }
     }];
     
+    [self.navigationController popViewControllerAnimated:YES];//前の画面に戻る
+    
+
 }
 - (IBAction)favorite:(id)sender {
    
@@ -114,11 +124,13 @@
     ACAccount *account = [accountStore accountWithIdentifier:self.identifier];
     
     NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/favorites/create.json"];
-    
-   // NSDictionary *params = @{@"id_str":self.idStr};
+    /*  昔の書き方
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:_idStr forKey:@"id"];
     [params setObject:@"true" forKey:@"include_entities"];
+        ↓今の書き方*/
+    NSDictionary *params = @{@"id" : self.idStr,
+                             @"include_entities" : @"ture"};
     
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                             requestMethod:SLRequestMethodPOST
@@ -151,72 +163,12 @@
         }
     }];
     
-    /*
-    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
-    ACAccount *account = [accountStore accountWithIdentifier:self.identifier];
-    
-                // Creating a request to get the info about a user on Twitter
-                
-                NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
-                [parameters setObject:_idStr forKey:@"id"];
-                [parameters setObject:@"true" forKey:@"include_entities"];
-                
-                NSString *url = [[NSString alloc] initWithFormat:@"https://api.twitter.com/1.1/favorites/create.json"];
-                
-                SLRequest *twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodPOST URL:[NSURL URLWithString:url] parameters:parameters];
-                
-                [twitterInfoRequest setAccount:account];
-                
-                // Making the request
-                
-                [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-                    
-                    // NSString *msg = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-                    // NSLog(@"%@", msg);
-                    
-                    if(error) { NSLog(@"Error getting data: %@", [error description]); return; }
-                    
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        if ([urlResponse statusCode] != 200) {
-                            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Sorry, your request doesn't succeed."
-                                                                              message:@"Please try again."
-                                                                             delegate:nil
-                                                                    cancelButtonTitle:@"OK"
-                                                                    otherButtonTitles:nil];
-                            [message show];
-                        } else {
-                            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Congratulations!"
-                                                                              message:@"Favorite Successfully!"
-                                                                             delegate:nil
-                                                                    cancelButtonTitle:@"OK"
-                                                                    otherButtonTitles:nil];
-                            [message show];
-                        }
-                    });
-                }];
-     */
+    [self.navigationController popViewControllerAnimated:YES];//前の画面に戻る
 }
 - (IBAction)replyAction:(id)sender {
-    // timeLineTableVewController.name = cell.nameLabel.text;
     
-    //  [_tweetTextView setText:[_tweetTextView.text stringByAppendingString:@"hoge"]];
+      ReplyTweetSheetViewController *replyTweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReplyTweetSheetViewController"];
     
-    // tweetSheetViewController.tweetTextView = tweetTextView.text;
-    
-    // TimeLineCell *cell = (TimeLineCell *)[tableView cellForRowAtIndexPath:indexPath];
-    
-    
-    //TweetSheetViewController *tweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TweetSheetViewController"];
-    //tweetSheetViewController.name = cell.nameLabel.text;
-    
-    // [self.navigationController pushViewController:tweetSheetViewController animated:YES];
-    
-    //  self.accountStore = [[ACAccountStore alloc] init];
-    //  self.tweetTextView.text = self.name;
-    
-    ReplyTweetSheetViewController *replyTweetSheetViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReplyTweetSheetViewController"];
-    
- //   replyTweetSheetViewController.idStr = [[self.timelineData objectAtIndex:_indexPath.row] objectForKey:@"idStr"];
     replyTweetSheetViewController.idStr = self.idStr;
     
     

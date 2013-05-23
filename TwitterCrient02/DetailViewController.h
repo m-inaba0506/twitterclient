@@ -11,6 +11,8 @@
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 #import "TweetSheetViewController.h"
+#import "WebViewController.h"
+#import "AppDelegate.h"
 
 
 @interface DetailViewController : UIViewController
@@ -27,12 +29,8 @@
 @property (nonatomic, copy) NSString *idStr;
 @property (nonatomic, retain) NSIndexPath *indexPath;
 
-
-
-
+@property (strong, nonatomic) IBOutlet UILabel *fav;
 @property (nonatomic, strong) NSArray *timelineData;
-
-
 
 @property (nonatomic, strong) ACAccountStore *accountStore;
 - (IBAction)replyAction:(id)sender;

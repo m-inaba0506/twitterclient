@@ -27,9 +27,11 @@
         self.nameLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:self.nameLabel];
         
-        //self.favimage = [[UIButton alloc]initWithFrame:CGRectZero];
-        
-        
+//        self.nameLabel2 = [[UILabel alloc] initWithFrame:CGRectZero];
+//        self.nameLabel2.font = [UIFont boldSystemFontOfSize:11.0];
+//        self.nameLabel2.textColor = [UIColor blackColor];
+//        [self.contentView addSubview:self.nameLabel2];
+
     }
     return self;
 }
@@ -44,6 +46,8 @@
     self.imageView.frame = CGRectMake(5, 5, 48, 48);
     self.tweetTextLabel.frame = CGRectMake(58, 25, 257, self.tweetTextLabelHeight);
     self.nameLabel.frame = CGRectMake(58, 10, 257, 10);
+   // self.nameLabel2.frame = CGRectMake(58,25, 257, 10);
+    
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;//画像サイズに合わせてimageViewを貼り付ける
 }
 @end

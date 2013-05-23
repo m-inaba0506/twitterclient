@@ -23,8 +23,6 @@
 @property (nonatomic, copy) NSString *identifier;
 - (IBAction)setAccountAction:(id)sender;
 
-
-
 @property (nonatomic, strong) NSArray *twitterAccounts;
 
 @end

@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) UILabel *nameLabel;
 
+//@property (nonatomic, strong) UILabel *nameLabel2;
+
 @property (nonatomic, strong) UIImageView *imageView;
 
 //@property (nonatomic, strong) UIImageView *favimage;
